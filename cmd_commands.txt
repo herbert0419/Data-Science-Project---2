@@ -1,0 +1,25 @@
+open cmd prompt & enter the following commands after you have crrated your conda/venv environment
+
+upgrade pip --- python -m pip install --upgrade pip
+install ipynbkernel --- pip install ipykernel
+create user --- python -m ipykernel install --user --name=shobhamn
+open notebook --- python -m notebook / jupyter notebook
+
+
+Activate Conda Env:
+1. C:/Users/Shobhandeb/anaconda3/Scripts/activate
+2. conda activate d:\Data-Science-Projects\.conda
+
+
+Setting up GPU & installing Tensorflow
+
+1. Go to the website: https://www.tensorflow.org/install/pip#windows-native
+2. Activate your conda/venv environment & follow.
+3. GPU setup: conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+4. Upgrade pip: pip install --upgrade pip
+5. install Tensorflow: pip install tensorflow==2.10.1
+
+import tensorflow
+tensorflow.test.is_gpu_available()
+tensorflow.test.is_built_with_cuda()
+tensorflow.config.list_physical_devices()
